@@ -21,7 +21,7 @@ rm -rf vendor/arrow
 git clone https://github.com/ViLelouch/android_device_xiaomi_mojito.git --depth 1 -b test device/xiaomi/mojito
 
 # cloning kernel tree
-git clone https://github.com/ViLelouch/android_kernel_xiaomi_mojito.git --depth 1 -b A13 kernel/xiaomi/mojito
+git clone https://github.com/ViLelouch/android_kernel_xiaomi_mojito.git --depth 1 -b 13 kernel/xiaomi/mojito
 
 # cloning vendor tree
 git clone https://github.com/ViLelouch/android_vendor_xiaomi_mojito.git --depth 1 -b 13 vendor/xiaomi/mojito
