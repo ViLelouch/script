@@ -15,7 +15,7 @@ repo init -u https://github.com/ArrowOS-T/android_manifest.git -b arrow-13.1_ext
 /opt/crave/resync.sh
 
 # cloning device tree
-git clone https://github.com/ViLelouch/android_device_xiaomi_mojito.git --depth 1 -b arrow device/xiaomi/mojito
+git clone https://github.com/ViLelouch/android_device_xiaomi_mojito.git --depth 1 -b test device/xiaomi/mojito
 
 # cloning kernel tree
 git clone https://github.com/ViLelouch/android_kernel_xiaomi_mojito.git --depth 1 -b A13 kernel/xiaomi/mojito
