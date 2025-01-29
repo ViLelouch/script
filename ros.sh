@@ -9,13 +9,13 @@ rm -rf kernel/xiaomi/mojito
 rm -rf vendor/xiaomi/mojito
 
 # Initialize ROM manifest
-repo init -u https://github.com/Ethereal-OS/Manifest -b A14 --git-lfs
+repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
 
 # Sync the repo with force to ensure a clean sync
 /opt/crave/resync.sh
 
 # cloning device tree
-git clone https://github.com/ViLelouch/android_device_xiaomi_mojito.git --depth 1 -b los device/xiaomi/mojito
+git clone https://github.com/ViLelouch/android_device_xiaomi_mojito.git --depth 1 -b ros device/xiaomi/mojito
 
 # cloning kernel tree
 git clone https://github.com/Kou-Yeager/kernel_xiaomi_mojito.git --depth 1 -b BORE+UCLAMP kernel/xiaomi/mojito
@@ -27,7 +27,7 @@ git clone https://github.com/Kou-Yeager/android_vendor_xiaomi_mojito.git --depth
 . build/envsetup.sh
 
 # Choose the target device
-lunch ethereal_mojito-ap2a-userdebug
+riseup mojito userdebug
 
 #  full building
-make b
+rise b
