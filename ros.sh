@@ -14,6 +14,9 @@ repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
 # Sync the repo with force to ensure a clean sync
 /opt/crave/resync.sh
 
+# remove source vendor/lineage 
+rm -rf vendor/lineage
+
 # cloning device tree
 git clone https://github.com/ViLelouch/android_device_xiaomi_mojito.git --depth 1 -b ros device/xiaomi/mojito
 
@@ -22,6 +25,9 @@ git clone https://github.com/Kou-Yeager/kernel_xiaomi_mojito.git --depth 1 -b BO
 
 # cloning vendor tree
 git clone https://github.com/Kou-Yeager/android_vendor_xiaomi_mojito.git --depth 1 -b lineage-22 vendor/xiaomi/mojito
+
+# add vendor/lineage
+git clone https://github.com/ViLelouch/android_vendor_lineage.git --depth 1 -b fourteen vendor/lineage
 
 # Set up th build environment
 . build/envsetup.sh
